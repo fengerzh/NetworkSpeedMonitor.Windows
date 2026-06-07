@@ -2,7 +2,7 @@
 
 一个轻量级的 Windows 桌面网速悬浮窗小工具，实时显示指定网卡的上传/下载速度。
 
-![.NET](https://img.shields.io/badge/.NET-8.0-purple)
+![.NET](https://img.shields.io/badge/.NET-10.0-purple)
 ![Platform](https://img.shields.io/badge/Platform-Windows-blue)
 
 ## 功能特性
