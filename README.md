@@ -10,7 +10,7 @@
 - 🖥️ 半透明悬浮窗，始终置顶显示
 - ⬇️⬆️ 实时显示下载/上传速度（Mbps）
 - 🖱️ 支持拖拽移动位置
-- 👻 鼠标悬停自动淡出，不遮挡内容
+- 👻 鼠标悬停自动淡出并穿透点击，不遮挡后方窗口内容（基于 Win32 `WS_EX_TRANSPARENT`）
 - ⌨️ **Ctrl+Alt+N** 全局快捷键，一键隐藏/显示
 - 🎯 可指定监控特定网卡（默认按名称精确匹配）
 - 📦 单文件发布，无需安装，双击即用
@@ -60,7 +60,7 @@ private const string TargetInterfaceName = "以太网 2";
 ├── NetworkSpeedMonitor.csproj   # 项目文件
 ├── App.xaml / App.xaml.cs       # WPF 应用入口
 ├── MainWindow.xaml              # 悬浮窗 UI 定义
-├── MainWindow.xaml.cs           # 窗口逻辑（定时器、拖拽、速度格式化）
+├── MainWindow.xaml.cs           # 窗口逻辑（定时器、拖拽、速度格式化、鼠标穿透）
 └── NetworkSpeedMonitor.cs       # 核心网速采集逻辑
 ```
 
