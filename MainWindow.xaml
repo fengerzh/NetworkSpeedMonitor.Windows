@@ -14,7 +14,9 @@
     <Border x:Name="MainBorder"
             Background="#CC1A1A2E"
             CornerRadius="8"
-            Padding="12,8,12,8">
+            Padding="12,8,12,8"
+            MouseEnter="Border_MouseEnter"
+            MouseLeave="Border_MouseLeave">
         <Border.Effect>
             <DropShadowEffect Color="Black" BlurRadius="10" ShadowDepth="0" Opacity="0.3"/>
         </Border.Effect>
